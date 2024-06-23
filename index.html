@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página do Produto</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="product-container">
+        <img src="./produto.jpeg" alt="Camiseta" class="product-image">
+        <div class="product-details">
+            <h1>2024 TEAM LIQUID JERSEYS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, amet inventore. Doloremque harum consequatur quas mollitia expedita, temporibus, impedit autem nemo est sapiente ab in possimus dolor provident. Nulla, rem.</p>
+            <p class="price">R$249,99</p>
+            <div class="variations">
+                <select name="size" id="size-select">
+                    <option value="">Selecione o tamanho</option>
+                    <option value="p">P</option>
+                    <option value="m">M</option>
+                    <option value="g">G</option>
+                </select>
+                <select name="color" id="color-select">
+                    <option value="">Selecione a cor</option>
+                    <option value="red">Vermelho</option>
+                    <option value="blue">Azul</option>
+                    <option value="green">Verde</option>
+                </select>
+            </div>
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <h3>Avaliações:</h3>
+        <div class="review">
+            <p class="review-text">Muito bom o produto, gostei bastante!</p>
+            <p class="review-author">Por Usuário 1</p>
+        </div>
+        <!-- Formulário para adicionar novos comentários -->
+        <div class="comment-form">
+            <h4>Deixe seu comentário:</h4>
+            <form id="commentForm">
+                <input type="hidden" id="productId" value="12345"> <!-- Supondo um ID de produto fixo -->
+                <input type="text" id="userId" placeholder="Seu ID de usuário" required>
+                <textarea id="commentText" placeholder="Escreva seu comentário" required></textarea>
+                <button type="submit">Enviar Comentário</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
